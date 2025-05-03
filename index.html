@@ -116,7 +116,11 @@ software development
     </div>
   </section>
   
-
+  <div class="popup" id="popup">
+    <img src="https://img.icons8.com/fluency/480/laptop.png" alt="Laptop Icon" />
+    <p>Try Laptop for a better version!</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
   <!-- Experience Section -->
   <section class="experience" id="experience">
     <h2>Experience</h2>
@@ -186,12 +190,11 @@ software development
   
     <div class="project-box">
       <div class="project-image">
-        <img src="hqdefault.jpg" alt="Project 2" />
+        <img src="skill.png" alt="Project 2" />
       </div>
       <div class="project-content">
-        <h3>Techx2k24</h3>
-        <p>Its a Inter College Department Symposium Website</p>
-        <a href="https://github.com/Manojsubramanii/techx24.git" target="_blank">View Project</a>
+        <h3>Projects will be updated soon</h3>
+        
       </div>
     </div>
   
@@ -239,3 +242,60 @@ software development
   <script src="script.js"></script>
 </body>
 </html>
+<style>
+  /* Popup styles */
+  .popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+    animation: popupAnimation 0.5s ease-in-out;
+  }
+
+  .popup img {
+    max-width: 50px;
+    margin-bottom: 15px;
+  }
+
+  .popup button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* Animation for popup */
+  @keyframes popupAnimation {
+    0% {
+      transform: translateX(-50%) translateY(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
+<script>
+  // Show the popup if screen width is small (suggesting laptop version)
+  if (window.innerWidth < 768) {
+    document.getElementById('popup').style.display = 'block';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
