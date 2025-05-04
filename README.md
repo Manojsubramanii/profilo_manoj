@@ -4,7 +4,7 @@ Welcome to my **developer portfolio website** repository! This site is a showcas
 
 ## 📌 Live Demo
 
-🔗 [Visit My Portfolio](https://your-username.github.io/your-repo-name)
+🔗 [Visit My Portfolio](https://manojsubramanii.github.io/profilo_manoj/)
 
 ## 🛠️ Tech Stack
 
